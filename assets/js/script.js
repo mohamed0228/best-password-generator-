@@ -68,19 +68,19 @@ function getInput() {
     if (characters == true) {
       minimumSpecialCharacters = functionArray.getRandomSymbol();
       console.log (minimumSpecialCharacters);
-    } //---------
+    } //------------------------
     var numbers = confirm("Would you like to include numbers?");
     if (numbers == true) {
       minimumNumbers = functionArray.getRandomNumber();
-    } //-----------
+    } //-------------------------
     var uppercaseletters = confirm("Would you like to include uppercase letters?");
     if (uppercaseletters == true) {
       minimumUpperCases = functionArray.getRandomUpper();
-    } //-----------
+    } //--------------------------
     var lowercaseletters = confirm("Would you like to include lowercase letters?");
     if (lowercaseletters == true) {
       minimumLowerCases = functionArray.getRandomLower();
-    }//-----------
+    }//----------------------------
     
     for (let i = 0; i < parseInt(length); i++) {
       var randomNumberPicked = Math.floor(Math.random()*pw.length);
@@ -96,8 +96,7 @@ function getInput() {
 
 // Write password to the #password input
 //function writePassword() {
-// var password = generatePassword();
-//}
+
 function writePassword() {
   pw = [];
   getInput();
